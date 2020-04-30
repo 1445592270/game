@@ -1,0 +1,37 @@
+[tool.poetry]
+name = "market"
+version = "0.1.0"
+description = ""
+authors = ["qytz <hhhhhf@foxmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+fastapi = "^0.54.1"
+motor = "^2.1"
+tortoise-orm = "^0.16.8"
+pyjwt = "^1.7"
+captcha = "^0.3.0"
+passlib = "^1.7"
+lxml = "^4.5"
+pydantic = {version = "^1.5", extras = ["email"]}
+bcrypt = "^3.1"
+aioredis = "^1.3.1"
+uvicorn = "^0.11.3"
+aliyun-python-sdk-core = "^2.13.15"
+asyncpg = "^0.20.1"
+aiomysql = "^0.0.20"
+orjson = "^2.6.6"
+[tool.poetry.dev-dependencies]
+pytest = "^3.0"
+
+[[tool.poetry.source]]
+name = "mirror"
+default = true
+# url = "https://mirrors.aliyun.com/pypi/simple/"
+# url = "https://mirrors.ustc.edu.cn/pypi/web/simple/"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple/"
+# url = "https://pypi.doubanio.com/simple/"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
